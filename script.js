@@ -11,6 +11,13 @@ result.addEventListener('keydown',(e)=>{
         result.value=eval(result.value)
     }
 })
+
+//enter to solve
+window.addEventListener('keydown',(e)=>{
+    if(e.key === "Enter"){
+        result.value=eval(result.value)
+    }
+})
 const buttons =document.querySelectorAll('span')
 buttons.forEach((button)=>{
     button.addEventListener('click',(e)=>{
