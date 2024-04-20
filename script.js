@@ -18,6 +18,18 @@ window.addEventListener('keydown',(e)=>{
         result.value=eval(result.value)
     }
 })
+
+// delete button to remove all character in calc display
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Delete") {
+        result.value = ''
+    }
+})
+//Press any key to focus on calc display
+window.addEventListener('keydown', (e) => {
+    result.focus()
+})
+
 const buttons =document.querySelectorAll('span')
 buttons.forEach((button)=>{
     button.addEventListener('click',(e)=>{
